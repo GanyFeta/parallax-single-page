@@ -10,7 +10,7 @@
 html {
 	font-size: 16px;
 	font-family: "Merriweather", Verdana, serif;
-    line-height: 1.5rem;
+ /*    line-height: 1.5rem !important; */
 }
 
 h1,
@@ -88,8 +88,8 @@ main {
 	align-items: center;
 	justify-items: center;
 }
-.page-content>p{
-    font-size: 2rem;
+.page-content>.text-area{
+    font-size: 1.3rem;
 	margin: 0;
 	width: max-content;
 	height: max-content;
@@ -111,6 +111,7 @@ main {
 	padding: 1rem 2rem;
 	background-color: var(--header-bg);
     color: var(--content-color);
+    line-height: 1.7rem; /*warum wird der Zeilenabstand nicht von der "html" vererbt?! */
 }
 /* .content-flex{
     display: flex;
