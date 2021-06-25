@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+:root {
+	--header-bg: rgba(54, 69, 79, 0.8);
+    --content-color:azure;
+}
+html {
+	font-size: 16px;
+	font-family: "Merriweather", Verdana, serif;
+    line-height: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Open Sans", Verdana, sans-serif;
+	color: azure;
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+.container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+		"header header header"
+		"main main main"
+		"footer footer footer";
+}
+/*------- Background Images ------*/
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* opacity: .8; */
+}
+.bgimg-1 {
+	background-image: url("pics/201812-35C309-1.jpg");
+	min-height: 100vh;
+	position: relative;
+}
+.bgimg-2 {
+	background-image: url("pics/wuerzburg-stramu-2-2016.jpg");
+	min-height: 100vh;
+}
+.bgimg-3 {
+	background-image: url("pics/wuerzburg-stramu-2016.jpg");
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 3rem;
+	margin: 0;
+	width: max-content;
+	height: max-content;
+	padding: 0.5em 1em;
+	background-color: var(--header-bg);
+}
+header {
+	display: grid;
+	grid-area: header;
+}
+.page-title {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+main {
+	display: grid;
+	grid-area: main;
+}
+.page-content{
+    display: grid;
+	align-items: center;
+	justify-items: center;
+}
+.page-content>p{
+    font-size: 2rem;
+	margin: 0;
+	width: max-content;
+	height: max-content;
+	padding: 1rem 2rem;
+	background-color: var(--header-bg);
+    color: var(--content-color);
+}
+.page-footer{
+    display: grid;
+	align-items: center;
+	justify-items: center;
+}
+.page-footer>p{
+
+    font-size: 1rem;
+	margin: 0;
+	width: 80ch;
+	height: max-content;
+	padding: 1rem 2rem;
+	background-color: var(--header-bg);
+    color: var(--content-color);
+}
+/* .content-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3rem;
+}
+.content-items{
+    display: inline-block;
+    min-width: 250px;
+    width:30%;
+    outline: 1px solid greenyellow;
+} */
+footer {
+	display: grid;
+	grid-area: footer;
+}
+.page-footer{
+    display: grid;
+	align-items: center;
+	justify-items: center;
+}
+@media screen (max-width: 560px) {
+    .bgimg-1 {
+        background-image: url("pics/201812-35C309-1.jpg");
+        min-height: 100vh;
+        position: relative;
+    }
+    .bgimg-2 {
+        background-image: url("pics/wuerzburg-stramu-2-2016.jpg");
+        min-height: 100vh;
+    }
+    .bgimg-3 {
+        background-image: url("pics/wuerzburg-stramu-2016.jpg");
+        min-height: 100vh;
+    }
