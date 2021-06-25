@@ -5,12 +5,12 @@
 }
 :root {
 	--header-bg: rgba(54, 69, 79, 0.8);
-    --content-color:azure;
+	--content-color: azure;
 }
 html {
 	font-size: 16px;
 	font-family: "Merriweather", Verdana, serif;
- /*    line-height: 1.5rem !important; */
+	/*    line-height: 1.5rem !important; */
 }
 
 h1,
@@ -55,11 +55,11 @@ body {
 }
 .bgimg-2 {
 	background-image: url("pics/wuerzburg-stramu-2-2016.jpg");
-	min-height: 100vh;
+	min-height: 800px;
 }
 .bgimg-3 {
 	background-image: url("pics/201811-DhouhaBesuch81.jpg");
-	min-height: 100vh;
+	min-height: 800px;
 }
 
 h1 {
@@ -83,35 +83,34 @@ main {
 	display: grid;
 	grid-area: main;
 }
-.page-content{
-    display: grid;
+.page-content {
+	display: grid;
 	align-items: center;
 	justify-items: center;
 }
-.page-content>.text-area{
-    font-size: 1.3rem;
+.page-content > .text-area {
+	font-size: 1.3rem;
 	margin: 0;
 	width: max-content;
 	height: max-content;
 	padding: 1rem 2rem;
 	background-color: var(--header-bg);
-    color: var(--content-color);
+	color: var(--content-color);
 }
-.page-footer{
-    display: grid;
+.page-footer {
+	display: grid;
 	align-items: center;
 	justify-items: center;
 }
-.page-footer>p{
-
-    font-size: 1rem;
+.page-footer > p {
+	font-size: 1rem;
 	margin: 0;
 	width: 80ch;
 	height: max-content;
 	padding: 1rem 2rem;
 	background-color: var(--header-bg);
-    color: var(--content-color);
-    line-height: 1.7rem; /*warum wird der Zeilenabstand nicht von der "html" vererbt?! */
+	color: var(--content-color);
+	line-height: 1.7rem; /*warum wird der Zeilenabstand nicht von der "html" vererbt?! */
 }
 /* .content-flex{
     display: flex;
@@ -130,22 +129,18 @@ footer {
 	display: grid;
 	grid-area: footer;
 }
-.page-footer{
-    display: grid;
+.page-footer {
+	display: grid;
 	align-items: center;
 	justify-items: center;
 }
-@media screen (max-width: 560px) {
-    .bgimg-1 {
-        background-image: url("pics/201812-35C309-1.jpg");
-        min-height: 100vh;
-        position: relative;
-    }
-    .bgimg-2 {
-        background-image: url("pics/wuerzburg-stramu-2-2016.jpg");
-        min-height: 100vh;
-    }
-    .bgimg-3 {
-        background-image: url("pics/wuerzburg-stramu-2016.jpg");
-        min-height: 100vh;
-    }
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-width: 700px) {
+	.bgimg-1,
+	.bgimg-2,
+	.bgimg-3 {
+		background-attachment: scroll;
+		width: max-content;
+	}
+}
