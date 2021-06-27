@@ -149,7 +149,7 @@ h1 {
 	.footer-content {
 		padding: 0.5rem 1rem;
 		font-size: 0.6rem;
-		max-width: max-content;
+		max-width: 70ch;
 		background-color: var(--header-bg);
 	}
 }
@@ -177,14 +177,20 @@ h1 {
 		background-position: center;
 	}
 	h1 {
-		max-width: fit-content;
+		max-width: max-content;
 		font-size: 0.8rem;
 		padding: 0.5rem 1rem;
 		background-color: var(--header-bg);
 	}
+	.main-content {
+		padding: 0.5rem 1rem;
+		font-size: 0.6rem;
+		max-width: max-content;
+		background-color: var(--header-bg);
+	}
 	.footer-content {
 		padding: 1.5rem 3rem;
-		font-size: 0.8rem;
+		font-size: 0.6rem;
 		max-width: 70ch;
 		height: fit-content;
 		background-color: var(--header-bg);
