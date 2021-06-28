@@ -177,7 +177,7 @@ h1 {
 		background-position: center;
 	}
 	h1 {
-		max-width: max-content;
+		/* 	max-width: max-content; >> with max-width:max-content h2 breaks unintentionally after dash*/
 		font-size: 0.8rem;
 		padding: 0.5rem 1rem;
 		background-color: var(--header-bg);
